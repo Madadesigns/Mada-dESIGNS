@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mada Designs | dESiGN With US</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+
+        <button class="theme-toggle" id="themeBtn" onclick="toggleTheme()">🌙</button>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <nav id="navMenu">
+            <a href="#">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero reveal">
+    <div class="hero-content">
+        <h2 id="typing"></h2>
+        <p>We Will Try To Give You Best Designs.</p>
+        <button class="btn">View My Work</button>
+        <a href="cv.pdf" download class="btn">Download CV</a>
+    </div>
+</section>
+
+<section class="portfolio reveal" id="portfolio">
+    <h2>My Portfolio</h2>
+    <div class="grid">
+        <div class="box"><img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c"></div>
+        <div class="box"><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0"></div>
+        <div class="box"><img src="https://images.unsplash.com/photo-1558655146-d09347e92766"></div>
+        <div class="box"><img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960"></div>
+    </div>
+</section>
+
+<section class="services reveal" id="services">
+    <h2>Services</h2>
+    <div class="service-container">
+        <div class="card">Logo Design</div>
+        <div class="card">Poster & Flyer</div>
+        <div class="card">Brand Strategy</div>
+        <div class="card">Wedding card</div>
+    </div>
+</section>
+
+<section class="stats reveal">
+    <div class="stat">
+        <h2 class="counter" data-target="500">0</h2>
+        <p>Happy Clients</p>
+    </div>
+    <div class="stat">
+        <h2 class="counter" data-target="320">0</h2>
+        <p>Projects Completed</p>
+    </div>
+    <div class="stat">
+        <h2 class="counter" data-target="2">0</h2>
+        <p>Years Experience</p>
+    </div>
+</section>
+
+<section class="contact reveal" id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="formMessage"></p>
+    </form>
+</section>
+
+<section class="social">
+    <h2>Connect With Us</h2>
+    <div class="social-links">
+        <a href="#">🌐</a>
+        <a href="#">📘</a>
+        <a href="#">📸</a>
+        <a href="#">🐦</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Mada Designs. All Rights Reserved.</p>
+</footer>
+
+<!-- Image Modal -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
